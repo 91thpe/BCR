@@ -9,7 +9,7 @@ jobs:
   generate-sitemap:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4.2.2
 
       - name: Generate sitemap.html
         run: python3 .github/scripts/generate_sitemap.py
