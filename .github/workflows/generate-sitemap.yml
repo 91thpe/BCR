@@ -9,7 +9,9 @@ jobs:
   generate-sitemap:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.2.2
+      - uses: actions/checkout@v4
+          env:
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
       - name: Generate sitemap.html
         run: python3 .github/scripts/generate_sitemap.py
